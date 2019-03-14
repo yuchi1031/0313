@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>就讀學校</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color:  #0099ff;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #66ccff;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f2f2f2;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #ffe6ff;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #0066ff;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #66a3ff;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h2><font face="微軟正黑體">一個人思慮太多，就會失去做人的樂趣</font></h2>
+<p>......</p>
+<p>to be continue</p>
+
+<header>
+  <h2><font face="標楷體">陳昱棋(Yu Chi Chen)</font></h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="index.html">自我介紹</a></li>
+      <li><a class="active" href="homework3-2.html">就讀學校</a></li>
+      <li><a href="homework3-3.html">生活照</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1><font face="微軟正黑體">就讀學校</font></h1>
+    <p><font face="微軟正黑體">國立台灣科技大學 資管系</font></p>
+    <p><font face="微軟正黑體">NTUST MIS</font></p>
+  </article>
+</section>
+
+<footer>
+  <p><font face="微軟正黑體">連絡電話：0987654321 call me~</font></p>
+</footer>
+
+</body>
+</html>
